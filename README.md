@@ -101,3 +101,28 @@ https://github.com/Kurtyanik/LR6/ (Fork).
 ![Рисунок 31](screenshots/31.png)
 
 ![Рисунок 32](screenshots/32.png)
+
+# Лог команд
+```
+git config --global user.name
+git config --global user.email
+git clone
+git pull origin master
+git log master
+git checkout -b branch1 origin/branch1
+git log branch1
+git log -p
+git merge branch1
+git diff
+git commit -m "Merged after resolving conflict"
+git branch -d branch1
+git push -d origin branch1
+git add file1.txt
+git commit -m "Create file1.txt"
+git add file2.txt
+git commit -m "Create file2.txt"
+git reset --hard HEAD~1
+git push
+git checkout -b report
+git push --set-upstream origin report
+```

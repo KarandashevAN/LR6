@@ -112,6 +112,7 @@ git log master
 git checkout -b branch1 origin/branch1
 git log branch1
 git log -p
+git checkout master
 git merge branch1
 git diff
 git commit -m "Merged after resolving conflict"

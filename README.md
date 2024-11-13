@@ -104,9 +104,9 @@ https://github.com/Kurtyanik/LR6/ (Fork).
 
 # Лог команд
 ```
-git config --global user.name
-git config --global user.email
-git clone
+git config --global user.name "B3441 Karandashev A N"
+git config --global user.email karandashevaleksey.guap@gmail.com
+git clone https://github.com/KarandashevAN/LR6.git
 git pull origin master
 git log master
 git checkout -b branch1 origin/branch1

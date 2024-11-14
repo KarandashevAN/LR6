@@ -129,47 +129,16 @@ git push --set-upstream origin report
 ```
 
 # История операций
+
+С помощью команды git log --pretty=format:"%h - %ad, %an : %s" получена история операций в форматированном виде (сокращённый хэш + дата + имя автора + комментарий):
+
 ```
-commit 1f1ab82a4c8dc16c96c774c2bcc4c88b6e54f948 (HEAD -> master, origin/master, origin/HEAD)
-Author: B3441 Karandashev A N <karandashevaleksey.guap@gmail.com>
-Date:   Tue Nov 5 15:36:06 2024 +0300
+1f1ab82 - Tue Nov 5 15:36:06 2024 +0300, B3441 Karandashev A N : Create file1.txt
+913d6af - Tue Nov 5 15:29:13 2024 +0300, B3441 Karandashev A N : Merged after resolving conflict
+041d00c - Tue Nov 5 15:06:01 2024 +0300, KarandashevAN : Create file.txt
+921f53b - Sat Nov 21 20:09:49 2020 +0300, Kurtyanik : Обновление информации
+0f9f50d - Sat Nov 21 20:08:33 2020 +0300, Kurtyanik : Заполнил файл
+c08a654 - Sat Nov 21 20:02:16 2020 +0300, Kurtyanik : Файл создан пустым
+3c6e913 - Sat Nov 21 19:58:20 2020 +0300, Kurtyanik : Initial commit
 
-    Create file1.txt
-
-commit 913d6afacc4a5561356f16e482c6ab3d18fe8ad5
-Merge: 041d00c 0f9f50d
-Author: B3441 Karandashev A N <karandashevaleksey.guap@gmail.com>
-Date:   Tue Nov 5 15:29:13 2024 +0300
-
-    Merged after resolving conflict
-
-commit 041d00ca390e5cf13f7116b4afa05074a78e6e27
-Author: KarandashevAN <karandashevaleksey.guap@gmail.com>
-Date:   Tue Nov 5 15:06:01 2024 +0300
-
-    Create file.txt
-
-commit 921f53b8d0cebf542c791cf31f04e9b792f385a4
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 20:09:49 2020 +0300
-
-    Обновление информации
-
-commit 0f9f50db68a6983b47398017545532cd0f992846
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 20:08:33 2020 +0300
-
-    Заполнил файл
-
-commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 20:02:16 2020 +0300
-
-    Файл создан пустым
-
-commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 19:58:20 2020 +0300
-
-    Initial commit
 ```
